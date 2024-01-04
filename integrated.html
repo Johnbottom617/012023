@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <style>
+
+        header {
+            background-image: url(https://www.hdwallpapers.in/download/landscape_of_mountain_green_hills_under_cloudy_blue_sky_4k_hd_nature-HD.jpg);
+            background-size:cover;
+            color: #ffee00d6;
+            font-size: 50px;
+            text-align: center;
+            padding: 50px;
+        }
+
+        body {
+          background-image: url(https://th.bing.com/th/id/OIP.FMBow4SdZilAyQIdZaMSOwHaE7?rs=1&pid=ImgDetMain);
+          background-size: cover;
+          font-size: 20px;
+          text-align: center;
+          color: hwb(224 34% 8%);
+          display: grid;
+          margin: 0;
+          padding: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button {
+            background-color: inherit;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .quadrant {
+            background-image: url(https://th.bing.com/th/id/OIP.soIkWEy9VwbTBZcf1r7FsQHaEK?rs=1&pid=ImgDetMain);
+            border: 4px solid #000;
+            box-sizing: border-box;
+            text-align: center;
+            display: fixed;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            
+        }
+
+        .quadrant a{
+            text-decoration: none;
+            font-size: 50px;
+            color: #200092;
+            width: 100%;
+            height: 100%;
+            display: fixed;
+        }
+
+        /*adjusts style as needed */
+        .quadrant:nth-child(all) {
+            background-color: white;
+            align-items: center;
+           
+        }
+           
+        footer {
+            background:#37dc00;
+            background-color: solid green;
+            color: rgb(225, 50, 11);
+            text-align: center;
+            align-content: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        
+    </style>
+</head>
+
+<header>
+    <text>THIS IS ONLY A TEST</text>
+</header>
+
+<main>
+   <div class="quadrant"><a href="">MK page</a></div>
+   <div class="quadrant"><a href="">PK page</a></div>
+   <div class="quadrant"><a href="">colabs?</a></div>
+   <div class="quadrant"><a href="">general fuckery</a></div>
+
+</main>
+
+<body>
+   
+    <button id="colorButton" onclick="changeColor()">press to change button color</button>
+    
+   
+    <script>
+       function changeColor() {
+        var button = document.getElementById('colorButton');
+        var randomColor = getRandomColor();
+        button.style.backgroundColor = randomColor;
+       }
+
+       function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+       }
+    </script>
+
+    
+
+    <footer>
+        <text>This could be some links or copyright info</text>
+    </footer>
+
+</body>
+
+<body><text>Using html, java, and css in the same script</text></body>
+<body><text>to spice up the look and feel. check out the</text></body>
+<body><text>code for the details and let me know if you</text></body>
+<body><text>have any questions.</text></body>
+</html>
